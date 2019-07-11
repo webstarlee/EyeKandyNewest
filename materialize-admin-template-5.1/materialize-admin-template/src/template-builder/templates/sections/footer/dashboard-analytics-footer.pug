@@ -1,0 +1,22 @@
+footer.page-footer(class="footer " + footerType +' cyan', class=(footerBorder == true ? 'navbar-border' : ''), class=(footerShadow == true ? 'navbar-shadow' : ''))
+	.container
+		.row.section
+			.col.l6.s12
+				h5.white-text World Market
+				p.grey-text.text-lighten-4 World map, world regions, countries and cities.
+				#world-map-markers
+			.col.l4.offset-l2.s12
+				h5.white-text Sales by Country
+				p.grey-text.text-lighten-4 A sample polar chart to show sales by country.
+				#polar-chart-holder
+				canvas#polar-chart(width='200')
+	div.page-footer.pt-0(class=footerColor)
+		.footer-copyright
+			.container
+				span
+				| &copy; #{new Date().getFullYear()}          
+				a(href='http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent', target='_blank') PIXINVENT
+				|  All rights reserved.
+				span.right.hide-on-small-only
+				| Design and Developed by 
+				a(href='https://pixinvent.com/') PIXINVENT

@@ -1,0 +1,130 @@
+// BEGIN: Header
+header#header.page-topbar
+  div.navbar(class=navbarPosition, class=(navbarHideOnScroll == true ? 'navbar-hide-on-scroll' : ''), class=(navbarBorder == true ? 'navbar-border' : ''), class=(navbarBrandCenter == true ? 'navbar-brand-center' : ''), class=(boxedLayout == true ? 'container boxed-layout' : ''))  
+    nav.navbar-main.navbar-color.nav-collapsible.sideNav-lock(class=navbarColor)
+      .nav-wrapper
+        ul.left
+          li
+            h1.logo-wrapper
+              a.brand-logo.darken-1(href='index.html')
+                if (logoType == 'dark')
+                  img(src='../../../app-assets/images/logo/materialize-logo-color.png', alt='materialize logo')
+                else
+                  img(src='../../../app-assets/images/logo/materialize-logo.png', alt='materialize logo')
+                span.logo-text.hide-on-med-and-down Materialize
+        .header-search-wrapper.hide-on-med-and-down
+          i.material-icons search
+          input.header-search-input.z-depth-2(type='text', name='Search', placeholder='Explore Materialize')
+        ul.navbar-list.right
+          li.hide-on-med-and-down
+            a.waves-effect.waves-block.waves-light.translation-button(href='javascript:void(0);', data-target='translation-dropdown')
+              span.flag-icon.flag-icon-gb
+          li.hide-on-med-and-down
+            a.waves-effect.waves-block.waves-light.toggle-fullscreen(href='javascript:void(0);')
+              i.material-icons settings_overscan         
+          li
+            a.waves-effect.waves-block.waves-light.notification-button(href='javascript:void(0);', data-target='notifications-dropdown')
+              i.material-icons
+                | notifications_none
+                small.notification-badge.orange.accent-3 5
+          li
+            a.waves-effect.waves-block.waves-light.profile-button(href='javascript:void(0);', data-target='profile-dropdown')
+              span.avatar-status.avatar-online
+                img(src='../../../app-assets/images/avatar/avatar-7.png', alt='avatar')
+                i
+          li
+            a.waves-effect.waves-block.waves-light.sidenav-trigger(href='#', data-target='slide-out-right')
+              i.material-icons format_indent_increase
+        // translation-button
+        ul#translation-dropdown.dropdown-content
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-gb
+              |  English
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-fr
+              |  French
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-cn
+              |  Chinese
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-de
+              |  German
+        // notifications-dropdown
+        ul#notifications-dropdown.dropdown-content
+          li
+            h6
+              | NOTIFICATIONS
+              span.new.badge 5
+          li.divider
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.cyan.small add_shopping_cart
+              |  A new order has been placed!
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 2 hours ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.red.small stars
+              |  Completed the task
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 3 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.teal.small settings
+              |  Settings updated
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 4 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.deep-orange.small today
+              |  Director meeting started
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 6 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.amber.small trending_up
+              |  Generate monthly report
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 1 week ago
+        // profile-dropdown
+        ul#profile-dropdown.dropdown-content
+          li
+            a.grey-text.text-darken-1(href='#')
+              i.material-icons face
+              |  Profile
+          li
+            a.grey-text.text-darken-1(href='#')
+              i.material-icons settings
+              |  Settings
+          li
+            a.grey-text.text-darken-1(href='#')
+              i.material-icons live_help
+              |  Help
+          li.divider
+          li
+            a.grey-text.text-darken-1(href='#')
+              i.material-icons lock_outline
+              |  Lock
+          li
+            a.grey-text.text-darken-1(href='#')
+              i.material-icons keyboard_tab
+              |  Logout
+
+    // BEGIN: Horizontal nav start
+    nav#horizontal-nav.white.hide-on-med-and-down
+      .nav-wrapper
+        +horizontalMenu([
+
+          {url:"page-blank.html",name:"Blank Page", slug:"pages",icon:"pages"},
+          {url:"#",name:"Menu levels", activate:"formsTables", icon:"photo_filter",slug:"", dropdown:"1",          
+              submenu:[
+                {url:"#",name:"Second level 1",slug:""},
+                {url:"#",name:"Second level 2",slug:""},
+                {url:"#",name:"Second level 3",slug:""},
+              ]
+            },
+          {url:"changelog.html" ,name:"Changelog", icon:"track_changes",slug:"changelog"},
+          {url:"https://pixinvent.com/materialize-material-design-admin-template/documentation/" ,name:"Documentation", icon:"import_contacts",slug:"documentation"},
+          {url:"https://pixinvent.ticksy.com/" ,name:"Support", icon:"help_outline",slug:"support"},
+        ])
+        // END: Horizontal nav start
+// END: Header

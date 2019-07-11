@@ -1,0 +1,27 @@
+/*----------------------------------------
+    Invoice Page
+------------------------------------------*/
+@import 'variables.scss';
+
+.invoice-table {
+	padding-top: 40px;
+}
+.invoice-text {
+	padding: 18px 0;
+}
+.invoice-icon i {
+	font-size: 2rem;
+}
+.border-right-1{
+	border-right:1px solid #cfd8dc;
+}
+
+table{
+	thead{
+		tr{
+			th{
+				color: color("blue-grey", "darken-4");
+			}
+		}
+	}
+}

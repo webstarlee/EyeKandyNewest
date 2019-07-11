@@ -1,0 +1,262 @@
+// BEGIN: Header
+header#header.page-topbar
+  div.navbar(class=navbarPosition, class=(navbarHideOnScroll == true ? 'navbar-hide-on-scroll' : ''), class=(navbarBorder == true ? 'navbar-border' : ''), class=(navbarBrandCenter == true ? 'navbar-brand-center' : ''), class=(boxedLayout == true ? 'container boxed-layout' : ''))  
+    nav.navbar-main.navbar-color.nav-collapsible.sideNav-lock(class=navbarColor)
+      .nav-wrapper
+        ul.left
+          li
+            h1.logo-wrapper
+              a.brand-logo.darken-1(href='index.html')
+                if (logoType == 'dark')
+                  img(src='../../../app-assets/images/logo/materialize-logo-color.png', alt='materialize logo')
+                else
+                  img(src='../../../app-assets/images/logo/materialize-logo.png', alt='materialize logo')
+                span.logo-text.hide-on-med-and-down Materialize
+        .header-search-wrapper.hide-on-med-and-down
+          i.material-icons search
+          input.header-search-input.z-depth-2(type='text', name='Search', placeholder='Explore Materialize')
+        ul.navbar-list.right
+          li.hide-on-med-and-down
+            a.waves-effect.waves-block.waves-light.translation-button(href='javascript:void(0);', data-target='translation-dropdown')
+              span.flag-icon.flag-icon-gb
+          li.hide-on-med-and-down
+            a.waves-effect.waves-block.waves-light.toggle-fullscreen(href='javascript:void(0);')
+              i.material-icons settings_overscan
+          li.hide-on-large-only
+            a.waves-effect.waves-block.waves-light.search-button(href='javascript:void(0);')
+              i.material-icons
+                | search         
+          li
+            a.waves-effect.waves-block.waves-light.notification-button(href='javascript:void(0);', data-target='notifications-dropdown')
+              i.material-icons
+                | notifications_none
+                small.notification-badge.orange.accent-3 5
+          li
+            a.waves-effect.waves-block.waves-light.profile-button(href='javascript:void(0);', data-target='profile-dropdown')
+              span.avatar-status.avatar-online
+                img(src='../../../app-assets/images/avatar/avatar-7.png', alt='avatar')
+                i
+          li
+            a.waves-effect.waves-block.waves-light.sidenav-trigger(href='#', data-target='slide-out-right')
+              i.material-icons format_indent_increase
+        // translation-button
+        ul#translation-dropdown.dropdown-content
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-gb
+              |  English
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-fr
+              |  French
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-cn
+              |  Chinese
+          li
+            a.grey-text.text-darken-1(href='#!')
+              i.flag-icon.flag-icon-de
+              |  German
+        // notifications-dropdown
+        ul#notifications-dropdown.dropdown-content
+          li
+            h6
+              | NOTIFICATIONS
+              span.new.badge 5
+          li.divider
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.cyan.small add_shopping_cart
+              |  A new order has been placed!
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 2 hours ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.red.small stars
+              |  Completed the task
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 3 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.teal.small settings
+              |  Settings updated
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 4 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.deep-orange.small today
+              |  Director meeting started
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 6 days ago
+          li
+            a.grey-text.text-darken-2(href='#!')
+              span.material-icons.icon-bg-circle.amber.small trending_up
+              |  Generate monthly report
+            time.media-meta(datetime='2015-06-12T20:50:48+08:00') 1 week ago
+        // profile-dropdown
+        ul#profile-dropdown.dropdown-content
+          li
+            a.grey-text.text-darken-1(href='user-profile-page.html')
+              i.material-icons person_outline
+              |  Profile
+          li
+            a.grey-text.text-darken-1(href='app-chat.html')
+              i.material-icons chat_bubble_outline
+              |  Chat
+          li
+            a.grey-text.text-darken-1(href='page-faq.html')
+              i.material-icons help_outline
+              |  Help
+          li.divider
+          li
+            a.grey-text.text-darken-1(href='user-lock-screen.html')
+              i.material-icons lock_outline
+              |  Lock
+          li
+            a.grey-text.text-darken-1(href='user-login.html')
+              i.material-icons keyboard_tab
+              |  Logout
+      nav.display-none.search-sm
+        .nav-wrapper
+          form
+            .input-field
+              input.search-box-sm(type='search', required='')
+              label.label-icon(for='search')
+                i.material-icons.search-sm-icon search
+              i.material-icons.search-sm-close close
+            
+
+    // BEGIN: Horizontal nav start
+    nav#horizontal-nav.white.hide-on-med-and-down
+      .nav-wrapper
+        +horizontalMenu([
+          {url:"#",name:"Dashboard",slug:"dashboard", activate:"DashboardDropdown" ,icon:"dashboard", dropdown:"1",
+            submenu:[
+               {url:"dashboard-modern.html", name:"Modern", slug:"dashboard-modern"},
+               {url:"dashboard-ecommerce.html", name:"eCommerce", slug:"dashboard-ecommerce"},
+               {url:"dashboard-analytics.html", name:"Analytics", slug:"dashboard-analytics"},
+            ]
+          },
+
+          {url:"#",name:"Templates",slug:"dashboard", activate:"TemplatesDropdown" ,icon:"dvr", dropdown:"1",
+            submenu:[
+                  {url:"../vertical-modern-menu-template/", name:"Modern  Menu", slug:"vertical-modern-menu-template"},
+                  {url:"../vertical-menu-nav-dark-template/", name:"Navbar Dark", slug:"vertical-menu-nav-dark-template"},
+                  {url:"../vertical-gradient-menu-template/", name:"Gradient Menu", slug:"vertical-gradient-menu-template"},
+                  {url:"../vertical-dark-menu-template/", name:"Dark Menu", slug:"vertical-gradient-menu-template"},
+                  {url:"../horizontal-menu-template/", name:"Horizontal Menu", slug:"horizontal-classic-menu-template"},
+            ]
+          },
+
+          {url:"#",name:"Apps",slug:"apps", activate:"AppsDropdown" ,icon:"mail_outline", dropdown:"1",
+          submenu:[
+            {url:"app-email.html" ,name:"Mailbox" ,icon:"mail_outline",slug:"app-email"},
+            {url:"app-chat.html" ,name:"Chat" ,icon:"chat_bubble_outline",slug:"app-chat"},
+            {url:"app-todo.html" ,name:"ToDo" ,icon:"check",slug:"app-todo"},
+            {url:"app-contacts.html" ,name:"Contacts" ,icon:"contacts",slug:"app-contacts"},
+            {url:"app-calendar.html" ,name:"Calendar" ,icon:"today",slug:"app-calendar"},
+            {url:"eCommerce-products-page.html", name:"Products Page", slug:"eCommerce-products-page"},
+            {url:"eCommerce-pricing.html", name:"Pricing", slug:"eCommerce-pricing"},
+            {url:"eCommerce-invoice.html", name:"Invoice", slug:"eCommerce-invoice"},
+            ]
+          },
+
+          {url:"#",name:"Pages", activate:"PageDropdown", slug:"pages",icon:"content_paste", dropdown:"1",
+            submenu:[
+              {url:"page-contact.html", name:"Contact", slug:"page-contact"},
+              {url:"page-blog-list.html", name:"Blog", slug:"page-blog-list"},
+              {url:"page-search.html", name:"Search", slug:"page-search"},
+              {url:"page-knowledge.html", name:"Knowledge", slug:"page-knowledge"},
+              {url:"page-faq.html", name:"FAQs", slug:"page-faq"},
+              {url:"page-blank.html", name:"Page Blank", slug:"page-blank"},
+              {url:"user-profile-page.html", name:"User Profile", slug:"user-profile-page"},
+              {url:"user-login.html", name:"Login", slug:"user-login"},
+              {url:"user-register.html", name:"Register", slug:"user-register"},
+              {url:"user-forgot-password.html", name:"Forgot Password", slug:"user-forgot-password"},
+              {url:"user-lock-screen.html", name:"Lock Screen", slug:"user-lock-screen"},
+            ]
+          },
+
+          {url:"#",name:"Cards",icon:"cast", slug:'cards', activate:"Cards", dropdown: "1",
+            submenu:[
+              {url:"cards-basic.html", name:"Cards", slug:"cards-basic"},
+              {url:"cards-advance.html", name:"Cards Advance", slug:"cards-advance"},
+              {url:"cards-extended.html", name:"Cards Extended", slug:"cards-extended"},
+            ]
+          },
+
+          {url:"#",name:"CSS", activate:'CssDropdown', slug:"css",icon:"invert_colors", dropdown:'1',
+            submenu:[
+              {url:"css-typography.html", name:"Typograpy", slug:"css-typography"},
+              {url:"css-color.html", name:"Color", slug:"css-color"},
+              {url:"css-grid.html", name:"Grid", slug:"css-grid"},
+              {url:"css-helpers.html", name:"Helpers", slug:"css-helpers"},
+              {url:"css-media.html", name:"Media", slug:"css-media"},
+              {url:"css-pulse.html", name:"Pulse", slug:"css-pulse"},
+              {url:"css-sass.html", name:"Sass", slug:"css-sass"},
+              {url:"css-shadow.html", name:"Shadow", slug:"css-shadow"},
+              {url:"css-animations.html", name:"Animations", slug:"css-animations"},
+              {url:"css-transitions.html", name:"Transitions", slug:"css-transitions"},
+            ]
+    },
+
+           {url:"#",name:"Basic UI", activate:"BasicUIDropdown",slug:"basic-ui",icon:"photo_filter", dropdown:"1",
+            submenu:[
+              {url:"ui-basic-buttons.html",name:"Basic Buttons",slug:"ui-basic-buttons"},
+              {url:"ui-extended-buttons.html",name:"Extended Buttons",slug:"ui-extended-buttons"},
+              {url:"ui-icons.html", name:"Icons", slug:"ui-icons"},
+              {url:"ui-alerts.html", name:"Alerts", slug:"ui-alerts"},
+              {url:"ui-badges.html", name:"Badges", slug:"ui-badges"},
+              {url:"ui-breadcrumbs.html", name:"Breadcrumbs", slug:"ui-breadcrumbs"},
+              {url:"ui-chips.html", name:"Chips", slug:"ui-chips"},
+              {url:"ui-collections.html", name:"Collections", slug:"ui-collections"},
+              {url:"ui-navbar.html", name:"Navbar", slug:"ui-navbar"},
+              {url:"ui-pagination.html", name:"Pagination", slug:"ui-pagination"},
+              {url:"ui-preloader.html", name:"Preloader", slug:"ui-preloader"},
+            ]
+          },
+
+          {url:"#",name:"Advanced UI", activate:"AdvancedUIDropdown",slug:"advance-ui",icon:"settings_brightness", dropdown:"1",
+            submenu:[
+              {url:"advance-ui-carousel.html", name:"Carousel", slug:"advance-ui-carousel"},
+              {url:"advance-ui-collapsibles.html", name:"Collapsibles", slug:"advance-ui-collapsibles"},
+              {url:"advance-ui-toasts.html", name:"Toasts", slug:"advance-ui-toasts"},
+              {url:"advance-ui-tooltip.html", name:"Tooltip", slug:"advance-ui-tooltip"},
+              {url:"advance-ui-dropdown.html", name:"Dropdown", slug:"advance-ui-dropdown"},
+              {url:"advance-ui-feature-discovery.html", name:"Discovery", slug:"advance-ui-feature-discovery"},
+              {url:"advance-ui-media.html", name:"Media", slug:"advance-ui-media"},
+              {url:"advance-ui-modals.html", name:"Modals", slug:"advance-ui-modals"},
+              {url:"advance-ui-scrollspy.html", name:"Scrollspy", slug:"advance-ui-scrollspy"},
+              {url:"advance-ui-tabs.html", name:"Tabs", slug:"advance-ui-tabs"},
+              {url:"advance-ui-waves.html", name:"Waves", slug:"advance-ui-waves"},
+            ]
+          },
+
+          {url:"#",name:"Extra Components", activate:"ExtraComponentsDropdown",slug:"extra-components",icon:"add_to_queue", dropdown:"1",
+            submenu:[
+              {url:"extra-components-range-slider.html", name:"Range Slider", slug:"extra-components-range-slider"},
+              {url:"extra-components-sweetalert.html", name:"Sweetalert", slug:"extra-components-sweetalert"},
+              {url:"extra-components-nestable.html", name:"Nestable", slug:"extra-components-nestable"},
+              {url:"extra-components-translation.html", name:"Translation", slug:"extra-components-translation"},
+              {url:"extra-components-highlight.html", name:"Highlight", slug:"extra-components-highlight"},
+            ]
+          },
+
+          {url:"#",name:"Forms & Tables", activate:"formsTables",icon:"chrome_reader_mode", dropdown:"1",
+            submenu:[
+              {url:"table-basic.html",name:"Basic Tables",icon:"border_all",slug:"table-basic"},
+              {url:"table-data-table.html",name:"Data Tables",icon:"border_all",slug:"table-data-table"},
+              {url:"form-elements.html", name:"Form Elements", slug:"form-elements"},
+              {url:"form-validation.html", name:"Form Validation", slug:"form-validation"},
+              {url:"form-masks.html", name:"Form Masks", slug:"form-masks"},        
+              {url:"form-file-uploads.html", name:"File Uploads", slug:"form-file-uploads"},
+            ]
+          },
+
+          {url:"#",name:"Chart", activate:"ChartDropdown",slug:"chart",icon:"pie_chart_outlined", dropdown:"1",
+            submenu:[
+              {url:"charts-chartjs.html", name:"ChartJS", slug:"charts-chartjs"},
+              {url:"charts-chartist.html", name:"Chartist", slug:"charts-chartist"},
+              {url:"charts-sparklines.html", name:"Sparkline Charts", slug:"charts-sparklines"},
+            ]
+          },
+
+        ])
+      // END: Horizontal nav start
+// END: Header

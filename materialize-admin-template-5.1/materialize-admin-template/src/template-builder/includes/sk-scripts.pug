@@ -1,0 +1,23 @@
+// BEGIN VENDOR JS
+script(src=app_assets_path + '/js/vendors.min.js', type='text/javascript')
+if dist == false
+	//- script(src=app_assets_path + '/vendors/js/forms/toggle/switchery.min.js', type='text/javascript')	
+// BEGIN VENDOR JS
+
+// BEGIN PAGE VENDOR JS
+block vendorjs
+// END PAGE VENDOR JS
+
+// BEGIN THEME  JS
+script(src=app_assets_path + '/js/plugins.js', type='text/javascript')
+script(src=app_assets_path + '/js/custom/custom-script.js', type='text/javascript')
+
+if blankPage != true
+	if dist == false
+		//- script(src=app_assets_path + '/js/scripts/customizer.js', type='text/javascript')
+		//- script(src=app_assets_path + '/vendors/js/jquery.sharrre.js', type='text/javascript')
+// END THEME  JS
+
+// BEGIN PAGE LEVEL JS
+block pagejs
+// END PAGE LEVEL JS

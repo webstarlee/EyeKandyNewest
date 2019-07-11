@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+    <title>Customization - Materialize</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- if !isDemo-->
+    <!--   script.-->
+    <!--     window.liveSettings = {-->
+    <!--       api_key: "a0b49b34b93844c38eaee15690d86413",-->
+    <!--       picker: "bottom-right",-->
+    <!--       detectlang: true,-->
+    <!--       dynamic: true,-->
+    <!--       autocollect: true-->
+    <!--     };-->
+    <!--   script(src='//cdn.transifex.com/live.js')-->
+  </head>
+  <body>
+    <header>
+      <div class="container"><a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>
+      <ul id="nav-mobile" class="sidenav sidenav-fixed">
+        <li class="logo"><a id="logo-container" href="/" class="brand-logo">
+            <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg">Your browser does not support SVG</object></a></li>
+        <li class="search">
+          <div class="search-wrapper">
+            <input id="search" placeholder="Search"><i class="material-icons">search</i>
+            <div class="search-results"></div>
+          </div>
+        </li>
+        <li class="bold"><a href="index.html" class="waves-effect waves-red">Home</a></li>
+        <li class="bold"><a href="about.html" class="waves-effect waves-red">About</a></li>
+        <li class="bold"><a href="getting-started.html" class="waves-effect waves-red">Getting Started</a></li>
+        <li class="bold active"><a href="customization.html" class="waves-effect waves-red">Customization</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-red">CSS</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="color.html">Color</a></li>
+                  <li><a href="grid.html">Grid</a></li>
+                  <li><a href="helpers.html">Helpers</a></li>
+                  <li><a href="media-css.html">Media</a></li>
+                  <li><a href="pulse.html">Pulse</a></li>
+                  <li><a href="sass.html">Sass</a></li>
+                  <li><a href="shadow.html">Shadow</a></li>
+                  <li><a href="table.html">Table</a></li>
+                  <li><a href="css-transitions.html">Transitions</a></li>
+                  <li><a href="typography.html">Typography</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-red">Components</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="badges.html">Badges</a></li>
+                  <li><a href="buttons.html">Buttons</a></li>
+                  <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                  <li><a href="cards.html">Cards</a></li>
+                  <li><a href="collections.html">Collections</a></li>
+                  <li><a href="floating-action-button.html">Floating Action Button</a></li>
+                  <li><a href="footer.html">Footer</a></li>
+                  <li><a href="icons.html">Icons</a></li>
+                  <li><a href="navbar.html">Navbar</a></li>
+                  <li><a href="pagination.html">Pagination</a></li>
+                  <li><a href="preloader.html">Preloader</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-red">JavaScript</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="auto-init.html">Auto Init</a></li>
+                  <li><a href="carousel.html">Carousel</a></li>
+                  <li><a href="collapsible.html">Collapsible</a></li>
+                  <li><a href="dropdown.html">Dropdown</a></li>
+                  <li><a href="feature-discovery.html">FeatureDiscovery</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="modals.html">Modals</a></li>
+                  <li><a href="parallax.html">Parallax</a></li>
+                  <li><a href="pushpin.html">Pushpin</a></li>
+                  <li><a href="scrollspy.html">Scrollspy</a></li>
+                  <li><a href="sidenav.html">Sidenav</a></li>
+                  <li><a href="tabs.html">Tabs</a></li>
+                  <li><a href="toasts.html">Toasts</a></li>
+                  <li><a href="tooltips.html">Tooltips</a></li>
+                  <li><a href="waves.html">Waves</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-red">Forms</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="autocomplete.html">Autocomplete</a></li>
+                  <li><a href="checkboxes.html">Checkboxes</a></li>
+                  <li><a href="chips.html">Chips</a></li>
+                  <li><a href="pickers.html">Pickers</a></li>
+                  <li><a href="radio-buttons.html">Radio Buttons</a></li>
+                  <li><a href="range.html">Range</a></li>
+                  <li><a href="select.html">Select</a></li>
+                  <li><a href="switches.html">Switches</a></li>
+                  <li><a href="text-inputs.html">Text Inputs</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="bold"><a href="apps.html" class="waves-effect waves-red">Applications</a></li>
+        <li class="bold"><a href="mobile.html" class="waves-effect waves-red">Mobile</a></li>
+        <li class="bold"><a href="credits.html" class="waves-effect waves-red">Credits</a></li>
+        <li class="bold"><a href="changelog.html" class="waves-effect waves-red">Changelog<span data-badge-caption="v5.1" class="new badge"></span></a></li>
+        <li class="bold"><a href="https://pixinvent.ticksy.com" class="waves-effect waves-red">Support</a></li>
+      </ul>
+    </header>
+    <main><div class="section" id="index-banner">
+    <div class="container">
+        <div class="row" style="margin-bottom: 0;">
+            <div class="col s12 m8 offset-m1 xl7 offset-xl1 center-on-small-only">
+                <h1 class="header">Template Customization</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m8 offset-m1 xl8 offset-xl1">
+            <div class="card teal white-text">
+                <div class="card-content">
+                    <p class="caption">Materialize Admin provides different types of id, classes & attributes
+                        to customize the template.</p>
+                </div>
+            </div>
+            <div id="body-snippet" class="row scrollspy">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">Body Options</div>
+                            <pre class="language-markup">
+<code class="language-markup">
+&lt;html class=&quot;loading&quot; lang=&quot;en&quot; data-textdirection=&quot;ltr&quot;&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;!--Body --&gt;
+&lt;body class=&quot;vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu 2-columns   menu-expanded fixed-navbar&quot; data-open=&quot;click&quot; data-menu=&quot;vertical-modern-menu&quot; data-color=&quot;&quot; data-col=&quot;2-columns&quot;&gt;
+...
+&lt;/body&gt;  
+&lt;!--/ Body --&gt;
+&lt;/html&gt;    
+                            </code> </pre>
+                            <p>You can use below mentioned attributes and classes for <code class="language-markup">&lt;body&gt;</code>
+                                to customize your application</p>
+                            <br>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Attribute
+                                        </th>
+                                        <th>
+                                            Value/Classes
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>class</td>
+                                        <td><code class="language-markup">.vertical-layout</code> / <br>
+                                            <code class="language-css">.horizontal-layout</code>
+                                        </td>
+                                        <td>If you want your application's layout to be vertical you'd have to add
+                                            <code class="language-markup">.vertical-layout</code> as a class to your
+                                            <code class="language-markup">&lt;body&gt;</code>
+                                            tag.
+                                            If you want your application's layout to be horizontal add <code class="language-markup">.horizontal-layout</code>
+                                            as a class to your <code class="language-markup">&lt;body&gt;</code> tag.
+                                            <strong>(It is mandatory to add any one of these classes to your body tag)</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css"> .vertical-menu-collapsible</code>/<br>
+                                            <code class="language-css">.horizontal-menu</code></code>
+                                        </td>
+                                        <td>
+                                            There are two type of navigation menu collapsible and horizontal. To get
+                                            collapisble menu you would have to have add <code class="language-markup">.vertical-menu-collapisble</code>
+                                            class to your <code class="language-markup">&lt;body&gt;</code>
+                                            tag.
+                                            If you want horizontal menu you'd have to add <code class="language-markup">.horizontal-menu</code>
+                                            <strong>(It is mandatory to add any one of these classes to your body tag)</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">.page-header-dark </code>/<br>
+                                            <code class="language-css">.page-header-light</code>
+                                        </td>
+                                        <td>
+                                            If you want a dark header for your application add <code class="language-markup">.page-header-dark</code>
+                                            as a class to
+                                            <code class="language-markup">&lt;body&gt;</code> or if you want a light
+                                            colored header add class <code class="laguage-markup">.page-header-light</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>data-menu</td>
+                                        <td><code class="language-markup">vertical-modern-menu </code>/<br>
+                                            <code class="language-css">vertical-menu-nav-dark</code>/<br>
+                                            <code class="language-css">vertical-gradient-menu-template </code>/<br>
+                                            <code class="language-css">vertical-dark-menu-template</code>/<br>
+                                            <code class="language-css">horizontal-menu-template</code></td>
+                                        <td><code class="langugae-markup">data-menu</code> atttribute is just for
+                                            reference to your <code class="langugae-markup"> &lt;body&gt; </code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            data-open
+                                        </td>
+                                        <td>
+                                            <code class="language-css">click</code>/ <code class="language-markup">hover</code>
+                                        </td>
+                                        <td>
+                                            If you want your data to be open on click you'd have to add <div class="code-language-markup">data-open="click"</div>
+                                            attribute or if you want your data to open on hover you'd have to add <div
+                                                class="code-language-markup">data-open="hover"</div>
+                                            <strong>(It is mandatory to add any one of the following)</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar-snippet" class="row scrollspy">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">Navbar Options</div>
+                            <pre class="language-markup">
+    <code class="language-markup">
+&lt;!--Navbar --&gt;
+&lt;div class=&quot;navbar navbar-fixed&quot;&gt; 
+&lt;nav class=&quot;navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-purple no-shadow&quot;&gt;
+...
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;!-- / Navbar --&gt;
+    </code>
+                            </pre>
+                            <p>You can use below mentioned attributes and classes for <code class="language-markup">&lt;nav&gt;</code>
+                                to customize your application</p>
+                            <br>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Attribute
+                                        </th>
+                                        <th>
+                                            Value
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">navbar-fixed</code>/ <br>
+                                            <code class="language-css">navbar-static</code>
+                                        </td>
+                                        <td>
+                                            To set navbar's postion as fixed use <code class="language-markup">.navbar-fixed</code>
+                                            as a wrapper of your <code class="language-markup">&lt;nav&gt;</code> tag
+                                            or if you want
+                                            your navbar to be static use
+                                            <code class="language-markup">.navbar-static</code>
+                                            <strong>(It is mandatory to use any one of these classes)</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">.navbar-dark</code> / <br>
+                                            <code class="language-css">.navbar-light</code>
+                                        </td>
+                                        <td>
+                                            Use class <code class="language-markup">.navbar-dark</code> for a dark
+                                            colored navbar or if you want
+                                            a light colored navbar use <code class="language-markup">.navbar-light</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">gradient-45deg-purple-deep-orange</code>(any
+                                            color)
+                                        </td>
+                                        <td>
+                                            You can change color of your navbar by just adding name of color as a class
+                                            you can pick colors from <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/css-color.html">Colors</a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td><code class="language-markup">.gradient-shadow</code></td>
+                                        <td>Use gradient shadow to give your navbar a gradient colored shadow </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-menu-snippet" class="row scrollspy">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">Navigation Menu Options</div>
+                            <pre class="language-markup">
+        <code class="language-markup">
+&lt;!--Navigation Menu--&gt;
+&lt;aside class=&quot;sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square&quot;&gt;
+...
+&lt;/aside&gt;
+&lt;!--/ Navigation Menu--&gt;
+        </code>
+                            </pre>
+                            <p>You can use below mentioned attributes and classes for <code class="language-markup">&lt;aside&gt;</code>
+                                to customize your application</p>
+                            <br>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Attribute
+                                        </th>
+                                        <th>
+                                            Value/Classes
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">.sidenav-light</code> / <br>
+                                            <code class="language-css">.sidenav-dark</code>
+                                        </td>
+                                        <td>
+                                            You can change you sidenav's color using these classes. If you want a dark
+                                            sidenav use
+                                            <code class="language-markup">.sidenav-dark</code> or for light colored
+                                            sidenav use <code class="language-markup">.sidenav-light</code>
+                                            <strong>(It is mandatory to use one of the following classes)</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            class
+                                        </td>
+                                        <td>
+                                            <code class="language-css">.sidenav-active-square /</code> <br>
+                                            <code class="language-css">.sidenav-active-rounded</code>
+                                        </td>
+                                        <td>
+                                            Use can select from how you want your active item to look in sidenav by
+                                            applying these classes to your
+                                            <code class="language-markup">&lt;aside&gt;</code> tag. if you want rounded
+                                            active item use <code class="language-markup">.sidenav-active-rounded</code>
+                                            or for square active
+                                            item use <code class="language-markup">.sidenav-active-square</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">.nav-expanded</code> / <br>
+                                            <code class="language-css">.nav-collapsed</code>
+                                        </td>
+                                        <td>
+                                            You can choose if you want your menu collapsed or expanded using <code
+                                                class="language-markup">.nav-expanded</code>
+                                            and <code class="language-markup">.nav-collapsed</code> with <code class="language-markup">.nav-lock</code>
+                                            in your <code class="language-markup">&lt;aside&gt;</code>
+                                            tag. <strong>(It is mandatory to use any one of these classes and you must
+                                                add class <code class="language-markup">.nav-lock</code> with them)</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td><code class="language-markup">.navbar-full</code></td>
+                                        <td>
+                                            If you want the color header of the menu to be same as navbar use <code
+                                                class="language-markup">.navbar-full</code>
+                                            class with your
+                                            <code class="language-markup">&lt;aside&gt;</code> tag.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td><code class="language-markup">.gradient-45deg-purple-deep-orange</code></td>(any
+                                        color)
+                                        <td>You can change color of the header of menu by using any color as a class
+                                            you can pick any color from <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/css-color.html">Colors</a>.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-snippet" class="row scrollspy">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">Footer Options</div>
+                            <pre class="language-markup">
+            <code class="language-markup">
+&lt;!--Footer--&gt;
+&lt;footer class=&quot;page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow&quot;&gt;
+...
+&lt;/footer&gt;
+&lt;!--/ Footer--&gt;
+            </code>
+                            </pre>
+                            <p>You can use below mentioned attributes and classes for <code class="language-markup">&lt;footer&gt;</code>
+                                to customize your application</p>
+                            <br>
+                            <table class="striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Attribute
+                                        </th>
+                                        <th>
+                                            Value/Classes
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">.footer-fixed</code> / <br>
+                                            <code class="language-css">.footer-static</code>
+                                        </td>
+                                        <td>
+                                            If you want your footer to be fixed you can use class <code class="language-markup">.footer-fixed</code>
+                                            or if you want footer to be static you can use class <code class="language-markup">.footer-static</code>.
+                                            <strong>(It is mandatory to use any one of the above mentioned class with
+                                                <code class="language-markup">&lt;footer&gt;</code> tag)</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td>
+                                            <code class="language-css">.footer-dark</code> / <br>
+                                            <code class="language-css">.footer-light</code>
+                                        </td>
+                                        <td>
+                                            You can select from dark or light colored footer by these classes with
+                                            <code class="language-markup">&lt;footer&gt;</code> tag.
+                                            <strong>
+                                                (It is mandatory to use any one of the following class for footer)
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>class</td>
+                                        <td><code class="language-markup">.gradient-45deg-purple-deep-orange</code>
+                                            (any color)</td>
+                                        <td>
+                                            You can change color of footer by using classes you just have to add name
+                                            of the color as a class
+                                            <a href="https://pixinvent.com/materialize-material-design-admin-template/html/ltr/vertical-modern-menu-template/css-color.html">Colors</a>.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Table of contents -->
+        <div class="col hide-on-small-only m3 xl2 offset-xl1">
+            <div class="toc-wrapper pinned" style="top: 0px;">
+                <div style="height: 1px;">
+                    <ul class="table-of-contents">
+                        <li><a href="#body-snippet" class="active">Body</a></li>
+                        <li><a href="#navbar-snippet">Navbar</a></li>
+                        <li><a href="#nav-menu-snippet">Navigation Menu</a></li>
+                        <li><a href="#footer-snippet">Footer Snippet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </main><footer class="page-footer docs-footer">
+  <div class="container">
+    <div class="row" style="margin-bottom: 0;">
+      <div class="col s12 m10 offset-m1">
+        <div class="footer-copyright">
+          <p class="grey-text text-darken-1">
+            ©
+            <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="https://pixinvent.com/materialize-material-design-admin-template/landing/"
+              target="_blank">Materialize - Material Design Admin Template</a>, All rights reserved.
+          </p>
+          <p class="grey-text text-darken-1 right">
+            Design & developed by<a href="https://pixinvent.com/" target="_blank"> PIXINVENT</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>;
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>if (!window.jQuery) { document.write('<script src="bin/jquery-3.2.1.min.js"><\/script>'); }
+    </script>
+    <script src="docs/js/jquery.timeago.min.js"></script>
+    <script src="docs/js/prism.js"></script>
+    <script src="docs/js/lunr.min.js"></script>
+    <script src="docs/js/search.js"></script>
+    <script src="bin/materialize.js"></script>
+    <script src="docs/js/init.js"></script>
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <!-- Google Plus Button-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--  Google Analytics  -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56218128-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

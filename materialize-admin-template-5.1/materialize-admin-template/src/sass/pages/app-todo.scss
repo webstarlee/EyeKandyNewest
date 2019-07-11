@@ -1,0 +1,185 @@
+/*----------------------------------------
+  Todo App
+------------------------------------------*/
+
+@import 'variables.scss';
+// app-todo css
+.app-todo{
+	.content-area{
+		margin-top: 49px;
+		width: calc(100% - 280px);
+		&.content-left{
+			float: left;
+		}
+		&.content-right{
+			float: right;
+		}
+		.app-wrapper{
+			.app-search{
+				position: relative;
+				.search-icon{
+					position: absolute;
+					top: 15px;
+					left: 15px;
+					color: color('grey','lighten-1');
+				}
+				.app-filter{
+					background-color: $white;
+					border: none;
+					max-width: calc(100% - 3rem);
+					border-radius: 0.4rem;
+					padding: 0.2rem;
+					padding-left: 2.75rem;
+					margin-bottom: 0.5rem;
+					box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+					&:focus{
+						box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+						border-bottom: none !important;
+					}
+				}
+			}
+			// List Items
+			.todo-header{
+				display: flex;
+				justify-content: space-between;
+				padding: 1rem 1.5rem 1rem 3%;
+				border-bottom: 1px solid color('grey','lighten-2');
+				.todo-action{
+					display: flex;
+					width: 275px;
+					justify-content: space-around;
+					align-items: center;
+					.select-action{
+						.dropdown-trigger{
+							padding: 0 0.75rem;
+						}
+					}
+				}
+				.header-checkbox{
+					[type="checkbox"] + span:not(.lever):before,
+					[type="checkbox"]:not(.filled-in) + span:not(.lever):after{
+						border-radius: 4px !important;
+						opacity: 0.5;
+						margin-left: 1rem;
+					}
+				}
+			}
+			.delete-task, .delete-tasks, .sort-task{
+				cursor: pointer;
+			}
+			.collection{
+				margin: 0;
+				border: 0;
+				.collection-item{
+					display: flex;
+					justify-content: space-around;
+					padding-left: 0;
+					.list-content {
+						width: 85%;
+						.list-title-area{
+							display: flex;
+							justify-content: space-between;
+						}
+						.list-title {
+							font-weight: 700;
+						}
+						.list-desc {
+							color:color('grey','base');
+							margin-top: 0.25rem;
+							font-size: 0.9rem;
+							line-height: 1.35rem;
+						}
+						.badge{
+							display: flex;
+							border-radius: 2px;
+							font-size: 0.8rem;
+							color:color('grey','darken-2');
+							padding-right: 8px;
+							i{
+								font-size: 1.25rem;
+								line-height: 1.5rem;
+								margin-right: 0.25rem !important;
+							}
+						}
+					}
+					.list-date{
+						font-size: 0.8rem;
+						color:color('grey','darken-2');
+					}
+					.favorite,.todo-move,.delete-task{
+						i.material-icons{
+							color:color('grey','lighten-1');
+							cursor: pointer;
+						}
+					}
+					.todo-move{
+						i.icon-move {
+							margin-top: 15px;
+							cursor: move;
+						}
+					}
+					[type="checkbox"] + span:not(.lever):before,
+					[type="checkbox"]:not(.filled-in) + span:not(.lever):after{
+						border-radius: 4px !important;
+						opacity: 0.5;
+						margin-left: 3px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Drag and drop css
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+// Responsive css
+@media (min-width: 1560px) {
+	.app-todo{
+		.content-area{
+			.app-wrapper{
+				.todo-header{
+					.header-checkbox{
+						[type="checkbox"]+ span:not(.lever):before,
+						[type="checkbox"]:not(.filled-in) + span:not(.lever):after{
+							margin-left: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 900px) {
+	.content-area{
+		margin-top: -110px !important;
+	 	&.content-right,&.content-left{
+			width: 100%;
+			float: none !important;
+			z-index: 1;
+		}
+	}
+	.sidebar{
+		.sidebar-content{
+			.sidenav-trigger{
+				top: 88px;
+			}
+		}
+	}
+}
+
+// Datepicker Modal Scss
+
+.add-task-modal{
+	.datepicker-modal{
+		width: 85%;
+	}
+}

@@ -1,0 +1,61 @@
+<div class="section">
+  <div class="card">
+    <div class="card-content">
+      <p class="caption"><a href="http://www.openxrest.com/translatejs/" target="_blank">Translation</a>
+        jQueryTranslator is a jQuery plugin which allows developers to translate a static web site easily.</p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <!--translation-->
+  <div id="translation" class="section">
+    <div class="row">
+      <div class="col s12">
+        <p>Select your language to test</p>
+        <select id="switch-lang" class="form-control" data-placeholder="Select a language..." tabindex="-1" title="">
+          <option value="en">English</option>
+          <option value="ch">Chinese</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+        </select>
+      </div>
+      <div class="col s12">
+        <p data-translate="name-john" class="trn">Hey, I am John Doe.</p>
+        <p data-translate="buy-now" class="trn">Buy coffee now</p>
+        <p data-translate="register-free" class="trn">Register new task</p>
+        <p data-translate="save-publish" class="trn">Save your item and publish</p>
+        <button type="button" class="btn btn-primary trn" data-translate="create-article">Create article</button>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="section translate-use">
+    <div class="row">
+      <div class="col s12">
+        <h4 class="header">Usage & Documentation</h4>
+      </div>
+      <div class="col s12">
+        <p>Translation here is easy. Just follow this steps to make your app translation ready:</p>
+        <p>Add class <code>.trn</code> to each element you want to translate, like this for example:</p>
+        <pre class="language-markup"><code class="language-markup" data-language="markup">
+&lt;p class="trn">Hey, I am John Doe.&lt;/p>
+</code></pre>
+        <p>Create a Dictionary in your JS file with the translations</p>
+        <pre class="language-javascript"><code class="language-javascript" data-language="javascript">
+var dict = {
+  "Hey, I am John Doe.": {
+    en: "Hey, I am John Doe.",
+    ch: '嘿，我是李四。',
+    es: "Hola, me llamo John",
+    fr: 'Bonjour, mon nom est John'
+  },
+        </code></pre>
+        <p>Call the plugin!</p>
+        <pre class="language-javascript"><code class="language-javascript" data-language="javascript">
+var translator = $('body').translate({ lang: 'en', t: dict }) // language and dictionary to use
+translator.lang('ch') // output language 
+translator.get('Hey, I am John Doe.') // get the text for translation
+        </code></pre>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+{
+  "html"         : "html",
+  "starter_kit"  : "starter-kit",  
+  "documentation": "documentation",
+  "assets"       : "assets",
+  "app_assets"   : "app-assets",
+  "assets_path"  : "../../../assets",
+  "app_assets_path": "../../../app-assets",
+  "destination": {
+    "js"     : "app-assets/js",
+    "css"    : "app-assets/css",
+    "css_rtl": "app-assets/css-rtl"
+  },
+  "source": {
+    "path"         : "src",
+    "js"           : "src/js",
+    "sass"         : "src/sass",
+    "template"     : "src/template-builder",
+    "documentation": "src/documentation"
+  },
+  "autoprefixerBrowsers": [
+    "Android 2.3",
+    "Android >= 4",
+    "Chrome >= 25",
+    "Firefox >= 15",
+    "Explorer >= 9",
+    "iOS >= 6",
+    "Opera >= 12",
+    "Safari >= 6"
+  ],
+  "vertical_modern_menu_template": {
+    "dashboardRename": "dashboard-modern.html",
+    "pugSrc": [
+      "*.pug",
+      "!**/template.pug"
+    ]
+  },
+  "vertical_menu_nav_dark_template": {
+    "dashboardRename": "dashboard-modern.html",
+    "pugSrc": [
+      "*.pug",
+      "!**/template.pug"
+    ]
+  },
+  "vertical_gradient_menu_template": {
+    "dashboardRename": "dashboard-ecommerce.html",
+    "pugSrc": [
+      "*.pug",
+      "!**/template.pug"
+    ]
+  },
+  "vertical_dark_menu_template": {
+    "dashboardRename": "dashboard-ecommerce.html",
+    "pugSrc": [
+      "*.pug",
+      "!**/template.pug"
+    ]
+  },
+  "horizontal_menu_template": {
+    "dashboardRename": "dashboard-ecommerce.html",
+    "pugSrc": [
+      "*.pug",
+      "!**/template.pug"
+    ]
+  }
+}

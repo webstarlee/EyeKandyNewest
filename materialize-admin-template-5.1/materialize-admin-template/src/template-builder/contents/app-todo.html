@@ -1,0 +1,479 @@
+<!-- Sidebar Area Starts -->
+<div class="sidebar-left sidebar-fixed">
+  <div class="sidebar">
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        <div class="sidebar-details">
+          <h5 class="m-0 sidebar-title"><i class="material-icons app-header-icon text-top">check_box</i> To-Do</h5>
+          <div class="row valign-wrapper mt-10 pt-2 animate fadeLeft">
+            <div class="col s2 media-image">
+              <img src="../../../app-assets/images/user/12.jpg" alt="" class="circle z-depth-2 responsive-img">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <p class="m-0 subtitle font-weight-700">Lawrence Collins</p>
+              <p class="m-0 text-muted">lawrence.collins@xyz.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar-list" class="sidebar-menu list-group position-relative  animate fadeLeft">
+        <div class="sidebar-list-padding app-sidebar sidenav" id="todo-sidenav">
+          <ul class="todo-list display-grid">
+            <li class="active"><a href="#!" class="text-sub"><i class="material-icons mr-2"> mail_outline </i> All</a>
+            </li>
+            <li class="sidebar-title">Filters</li>
+            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> star_border </i> Starred</a></li>
+            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> info_outline </i> Priority</a></li>
+            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> watch_later </i> Scheduled</a></li>
+            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> date_range </i> Today</a></li>
+            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> check </i> Done</a></li>
+            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> delete </i> Delete</a></li>
+            <li class="sidebar-title">Department</li>
+            <li><a href="#!" class="text-sub"><i class="purple-text material-icons small-icons mr-2">
+                  fiber_manual_record </i> API</a></li>
+            <li><a href="#!" class="text-sub"><i class="amber-text material-icons small-icons mr-2">
+                  fiber_manual_record </i> Paypal</a></li>
+            <li><a href="#!" class="text-sub"><i class="light-green-text material-icons small-icons mr-2">
+                  fiber_manual_record </i> Invoice</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" data-target="todo-sidenav" class="sidenav-trigger hide-on-large-only"><i
+          class="material-icons">menu</i></a>
+    </div>
+  </div>
+</div>
+<!-- Sidebar Area Ends -->
+
+<!-- Content Area Starts -->
+<div class="app-todo">
+  <div class="content-area content-right">
+    <div class="app-wrapper">
+      <div class="app-search">
+        <i class="material-icons mr-2 search-icon">search</i>
+        <input type="text" placeholder="Search Contact" class="app-filter" id="todo_filter">
+      </div>
+      <div class="card card card-default scrollspy border-radius-6 fixed-width">
+        <div class="card-content p-0">
+          <div class="todo-header">
+            <div class="header-checkbox">
+              <label>
+                <input type="checkbox" onClick="toggle(this)" />
+                <span></span>
+              </label>
+            </div>
+            <div class="list-content"></div>
+            <div class="todo-action">
+              <div class="select-action">
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-trigger btn btn-small' href='#' data-target='dropdown1'>
+                  Start Date
+                  <i class="material-icons right">keyboard_arrow_down</i>
+                </a>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="#!">one</a></li>
+                  <li><a href="#!">two</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">three</a></li>
+                  <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                  <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                </ul>
+              </div>
+              <span class="delete-tasks"><i class="material-icons grey-text mr-1">delete</i></span>
+              <span class="sort-task"><i class="material-icons grey-text">sort</i></span>
+            </div>
+          </div>
+          <ul class="collection todo-collection">
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Contrary to popular belief</div>
+                  <span class="badge grey lighten-2"><i class="purple-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>API</span>
+                </div>
+                <div class="list-desc">There are many variations of passages of Lorem Ipsum available, but the majority
+                  have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                  slightly believable. If you are going to use a passage of Lorem Ipsum</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Cupcake tootsie roll icing biscuit</div>
+                  <span class="badge grey lighten-2"><i class="amber-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Paypal</span>
+                </div>
+                <div class="list-desc">Chocolate cake biscuit candy canes carrot cake. Bear claw wafer jujubes bear
+                  claw candy biscuit. Jelly-o pudding topping. Muffin soufflé cotton candy topping candy muffin
+                  biscuit. Lemon drops lemon drops powder gingerbread pastry cake.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Apple pie cake biscuit bonbon</div>
+                  <span class="badge grey lighten-2"><i class="purple-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>API</span>
+                </div>
+                <div class="list-desc">Pudding ice cream macaroon caramels oat cake gummies jelly-o wafer macaroon.
+                  Gingerbread cheesecake pudding donut halvah pastry cheesecake. Tootsie roll lemon drops brownie ice
+                  cream jelly jelly fruitcake. Muffin tiramisu cake ice cream.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Cupcake danish icing cupcake cupcake</div>
+                  <span class="badge grey lighten-2"><i class="light-green-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Invoice</span>
+                </div>
+                <div class="list-desc">Pie soufflé gummies danish cake pudding tart lollipop. Donut apple pie marzipan.
+                  Cupcake pastry gingerbread chocolate cake ice cream icing muffin. Lemon drops cotton candy liquorice
+                  candy icing ice cream bear claw. Candy gummies gummies macaroon jujubes biscuit lemon drops.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Cake macaroon topping jelly</div>
+                  <span class="badge grey lighten-2"><i class="amber-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Paypal</span>
+                </div>
+                <div class="list-desc">Apple pie icing powder cheesecake sweet roll halvah pudding sugar plum toffee.
+                  Cotton candy tart apple pie.Tart bonbon halvah cake. Carrot cake sugar plum tootsie roll macaroon
+                  jujubes.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Wafer chocolate cake tiramisu</div>
+                  <span class="badge grey lighten-2"><i class="amber-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Paypal</span>
+                </div>
+                <div class="list-desc">Candy sesame snaps tiramisu bear claw ice cream chocolate fruitcake powder
+                  biscuit. Pudding oat cake cotton candy. Candy canes sweet fruitcake. Macaroon pie bear claw sweet oat
+                  cake candy.Marzipan soufflé sugar plum caramels oat cake cake.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Chocolate cake donut jujubes</div>
+                  <span class="badge grey lighten-2"><i class="purple-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>API</span>
+                </div>
+                <div class="list-desc">Bear claw macaroon cheesecake cotton candy bear claw sweet roll sweet roll sugar
+                  plum. Oat cake sweet jelly beans cheesecake soufflé sweet macaroon. Pudding gingerbread bear claw
+                  chupa chups lollipop carrot cake. Cotton candy icing sweet roll.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Contrary to popular belief</div>
+                  <span class="badge grey lighten-2"><i class="light-green-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Invoice</span>
+                </div>
+                <div class="list-desc">Marzipan icing liquorice tiramisu bonbon sweet roll toffee sweet cupcake. Candy
+                  canes candy canes pudding pie tiramisu tiramisu powder macaroon. Cotton candy candy powder cheesecake
+                  dessert. Sweet halvah marshmallow croissant tootsie roll. Marzipan pudding apple pie caramels sweet
+                  roll.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Candy pudding apple pie</div>
+                  <span class="badge grey lighten-2"><i class="light-green-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Invoice</span>
+                </div>
+                <div class="list-desc">Cupcake bear claw pudding. Liquorice cake jujubes candy canes topping pudding.
+                  Oat cake liquorice jujubes donut. Powder tiramisu pudding bear claw caramels sweet roll jelly-o.
+                  Candy canes gummies muffin wafer oat cake chupa chups. Jujubes tootsie roll pie.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Powder lollipop lollipop pie tiramisu</div>
+                  <span class="badge grey lighten-2"><i class="purple-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>API</span>
+                </div>
+                <div class="list-desc">Wafer donut candy. Gummies tootsie roll marshmallow. Sweet roll tootsie roll
+                  tart. Chocolate bar marzipan gummies jelly dessert macaroon lollipop topping gingerbread. Donut sugar
+                  plum halvah gummies muffin pudding.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Oat cake tootsie roll powder</div>
+                  <span class="badge grey lighten-2"><i class="light-green-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Invoice</span>
+                </div>
+                <div class="list-desc">Topping jelly-o muffin pie. Apple pie dessert oat cake liquorice marshmallow
+                  danish gummies tart. Fruitcake toffee tiramisu. Candy canes candy canes biscuit gummies jujubes
+                  soufflé caramels. Lollipop bonbon danish gingerbread sesame snaps dragée.</div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="todo-move">
+                <i class="material-icons icon-move">drag_handle</i>
+              </div>
+              <div class="list-left">
+                <label>
+                  <input type="checkbox" name="foo" />
+                  <span></span>
+                </label>
+                <div class="favorite">
+                  <i class="material-icons">star_border</i>
+                </div>
+              </div>
+              <div class="list-content">
+                <div class="list-title-area">
+                  <div class="list-title">Caramels pudding chupa chups </div>
+                  <span class="badge grey lighten-2"><i class="amber-text material-icons small-icons mr-2">
+                      fiber_manual_record </i>Paypal</span>
+                </div>
+                <div class="list-desc"> Cotton candy cheesecake sweet roll. Gummi bears tiramisu jelly powder. Dessert
+                  pie apple pie chocolate bar carrot cake donut chupa chups. Cookie marzipan sweet roll chocolate
+                  topping candy canes. Carrot cake croissant jujubes chupa chups cupcake apple pie caramels cake icing.
+                </div>
+              </div>
+              <div class="list-right">
+                <div class="list-date"> 23 Apr </div>
+                <div class="delete-task"><i class="material-icons">delete</i></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Content Area Ends -->
+
+<!-- Add new todo popup -->
+<div style="bottom: 54px; right: 19px;" class="fixed-action-btn direction-top">
+  <a class="btn-floating btn-large primary-text gradient-shadow modal-trigger" href="#modal1">
+    <i class="material-icons">note_add</i>
+  </a>
+</div>
+<!-- Add new todo popup Ends-->
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal border-radius-6 add-task-modal">
+  <div class="modal-content">
+    <h5 class="mt-0">Add New Task</h5>
+    <hr>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> title </i>
+            <input id="title" type="text" class="validate">
+            <label for="title">Title</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> date_range </i>
+            <input id="start-date" type="text" class="validate datepicker">
+            <label for="start-date">Start Date</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> date_range </i>
+            <input id="end-date" type="text" class="validate datepicker">
+            <label for="end-date">End Date</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> note </i>
+            <textarea id="notes" class="materialize-textarea validate"></textarea>
+            <label for="notes">Notes</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a class="btn modal-close waves-effect waves-light mr-2">Add Task</a>
+  </div>
+</div>
+<!-- Modal Structure Ends -->

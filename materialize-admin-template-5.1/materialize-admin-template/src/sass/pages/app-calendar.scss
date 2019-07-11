@@ -1,0 +1,31 @@
+/*----------------------------------------
+  Calendar App
+------------------------------------------*/
+@import 'variables.scss';
+
+.fc{
+    .fc-event{
+        background: $primary-color;
+        color: $white;
+        border: none;
+        padding: 4px 7px;
+    }
+    .fc-button{
+        background: $secondary-color;
+        color: $white !important;  
+        text-shadow: none;
+        border-radius: 2px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .fc-content-skeleton{
+        tr{
+            border-bottom: none;
+        }
+    }
+
+    td.fc-day{
+        border-width: 1px !important;
+    }
+}

@@ -1,0 +1,216 @@
+- var sk_path = "../../../starter-kit/"+ useDirection +"/"+ useLayout +"/"
+- var query_string = "?lng=en"
+
+// BEGIN: SideNav
+//- main menu
+aside.sidenav-main.nav-expanded.nav-lock.nav-collapsible(class= menuType)
+  //- main menu header
+  //- include includes/menu-header
+  //- / main menu header
+
+  //- main menu content
+  .brand-sidebar(class= menuColor)
+  
+  +verticalMenu([
+    
+    {url:"#",name:"Dashboard", class:"collapsible-header waves-effect waves-cyan",slug:"dashboard",icon:"settings_input_svideo",tag:"3" , tagcustom: "badge pill red float-right mr-10",
+      submenu:[
+        {url:"dashboard-modern.html", name:"Modern", slug:"dashboard-modern"},
+        {url:"dashboard-ecommerce.html", name:"eCommerce", slug:"dashboard-ecommerce"},
+        {url:"dashboard-analytics.html", name:"Analytics", slug:"dashboard-analytics"},
+      ]
+    },
+    {url:"#",name:"Templates", class:"collapsible-header waves-effect waves-cyan",slug:"dashboard",icon:"dvr",
+      submenu:[
+
+         {url:"#", class:"collapsible-header waves-effect waves-cyan" ,name:"Vertical",slug:"",
+          submenu:[
+            {url:"../vertical-modern-menu-template/", name:"Modern  Menu", slug:"vertical-modern-menu-template"},
+            {url:"../vertical-menu-nav-dark-template/", name:"Navbar Dark", slug:"vertical-menu-nav-dark-template"},
+            {url:"../vertical-gradient-menu-template/", name:"Gradient Menu", slug:"vertical-gradient-menu-template"},
+            {url:"../vertical-dark-menu-template/", name:"Dark Menu", slug:"vertical-gradient-menu-template"},
+          ]
+        },
+        {url:"#", class:"collapsible-header waves-effect waves-cyan" ,name:"Horizontal",slug:"",
+          submenu:[
+            {url:"../horizontal-menu-template/", name:"Horizontal Menu", slug:"horizontal-classic-menu-template"},
+          ]
+        },
+      ]
+    },
+
+    {navheader:"Applications",icon:"remove"},
+
+    {url:"app-email.html" ,name:"Mailbox", class:"waves-effect waves-cyan" ,icon:"mail_outline",slug:"app-email"},
+    {url:"app-chat.html" ,name:"Chat", class:"waves-effect waves-cyan" ,icon:"chat_bubble_outline",slug:"app-chat"},
+    {url:"app-todo.html" ,name:"ToDo", class:"waves-effect waves-cyan" ,icon:"check",slug:"app-todo"},
+    {url:"app-contacts.html" ,name:"Contacts", class:"waves-effect waves-cyan" ,icon:"import_contacts",slug:"app-contacts"},
+    {url:"app-calendar.html" ,name:"Calendar", class:"waves-effect waves-cyan" ,icon:"today",slug:"app-calendar"},
+     {url:"#",name:"eCommerce", class:"collapsible-header waves-effect waves-cyan",slug:"eCommerce",icon:"add_shopping_cart",
+      submenu:[
+        {url:"eCommerce-products-page.html", name:"Products Page", slug:"eCommerce-products-page"},
+        {url:"eCommerce-pricing.html", name:"Pricing", slug:"eCommerce-pricing"},
+        {url:"eCommerce-invoice.html", name:"Invoice", slug:"eCommerce-invoice"},
+      ]
+    },
+
+    {navheader:"Pages ",icon:"remove"},
+
+    {url:"#",name:"Pages", class:"collapsible-header waves-effect waves-cyan",slug:"pages",icon:"content_paste",
+      submenu:[
+        {url:"page-contact.html", name:"Contact", slug:"page-contact"},
+        {url:"page-blog-list.html", name:"Blog", slug:"page-blog-list"},
+        {url:"page-search.html", name:"Search", slug:"page-search"},
+        {url:"page-knowledge.html", name:"Knowledge", slug:"page-knowledge"},
+        {url:"page-faq.html", name:"FAQs", slug:"page-faq"},
+        {url:"page-blank.html", name:"Page Blank", slug:"page-blank"},
+      ]
+    },
+     {url:"#",name:"Medias", class:"collapsible-header waves-effect waves-cyan",slug:"medias",icon:"crop_original",
+      submenu:[
+        {url:"media-gallery-page.html", name:"Gallery Page", slug:"media-gallery-page"},
+        {url:"media-hover-effects.html", name:"Media Hover Effects", slug:"media-hover-effects"},
+      ]
+    },
+    {url:"#",name:"User", class:"collapsible-header waves-effect waves-cyan",slug:"user",icon:"face",
+      submenu:[
+        {url:"user-profile-page.html", name:"User Profile", slug:"user-profile-page"},
+        {url:"user-login.html", name:"Login", slug:"user-login"},
+        {url:"user-register.html", name:"Register", slug:"user-register"},
+        {url:"user-forgot-password.html", name:"Forgot Password", slug:"user-forgot-password"},
+        {url:"user-lock-screen.html", name:"Lock Screen", slug:"user-lock-screen"},
+      ]
+    },
+    {url:"#",name:"Misc", class:"collapsible-header waves-effect waves-cyan",slug:"misc",icon:"filter_tilt_shift",
+      submenu:[
+        {url:"page-404.html", name:"404", slug:"page-404"},
+        {url:"page-maintenance.html", name:"Page Maintenanace", slug:"page-maintenance"},
+        {url:"page-500.html", name:"500", slug:"page-505"},
+      ]
+    },
+
+    {navheader:"User Interface ",icon:"remove"},
+
+    {url:"#",name:"Cards", class:"collapsible-header waves-effect waves-cyan",slug:"cards",icon:"cast",
+      submenu:[
+        {url:"cards-basic.html", name:"Cards", slug:"cards-basic"},
+        {url:"cards-advance.html", name:"Cards Advance", slug:"cards-advance"},
+        {url:"cards-extended.html", name:"Cards Extended", slug:"cards-extended"},
+      ]
+    },
+    
+    {url:"#",name:"CSS", class:"collapsible-header waves-effect waves-cyan",slug:"css",icon:"invert_colors",
+      submenu:[
+        {url:"css-typography.html", name:"Typograpy", slug:"css-typography"},
+        {url:"css-color.html", name:"Color", slug:"css-color"},
+        {url:"css-grid.html", name:"Grid", slug:"css-grid"},
+        {url:"css-helpers.html", name:"Helpers", slug:"css-helpers"},
+        {url:"css-media.html", name:"Media", slug:"css-media"},
+        {url:"css-pulse.html", name:"Pulse", slug:"css-pulse"},
+        {url:"css-sass.html", name:"Sass", slug:"css-sass"},
+        {url:"css-shadow.html", name:"Shadow", slug:"css-shadow"},
+        {url:"css-animations.html", name:"Animations", slug:"css-animations"},
+        {url:"css-transitions.html", name:"Transitions", slug:"css-transitions"},
+      ]
+    },
+
+    {url:"#",name:"Basic UI", class:"collapsible-header waves-effect waves-cyan",slug:"basic-ui",icon:"photo_filter",
+      submenu:[
+        {url:"#", class:"collapsible-header waves-effect waves-cyan" ,name:"Buttons",slug:"",
+          submenu:[
+            {url:"ui-basic-buttons.html",name:"Basic",slug:"ui-basic-buttons"},
+            {url:"ui-extended-buttons.html",name:"Extended",slug:"ui-extended-buttons"},
+          ]
+        },
+        {url:"ui-icons.html", name:"Icons", slug:"ui-icons"},
+        {url:"ui-alerts.html", name:"Alerts", slug:"ui-alerts"},
+        {url:"ui-badges.html", name:"Badges", slug:"ui-badges"},
+        {url:"ui-breadcrumbs.html", name:"Breadcrumbs", slug:"ui-breadcrumbs"},
+        {url:"ui-chips.html", name:"Chips", slug:"ui-chips"},
+        {url:"ui-collections.html", name:"Collections", slug:"ui-collections"},
+        {url:"ui-navbar.html", name:"Navbar", slug:"ui-navbar"},
+        {url:"ui-pagination.html", name:"Pagination", slug:"ui-pagination"},
+        {url:"ui-preloader.html", name:"Preloader", slug:"ui-preloader"},
+      ]
+    },
+    {url:"#",name:"Advanced UI", class:"collapsible-header waves-effect waves-cyan",slug:"advance-ui",icon:"settings_brightness",
+      submenu:[
+        {url:"advance-ui-carousel.html", name:"Carousel", slug:"advance-ui-carousel"},
+        {url:"advance-ui-collapsibles.html", name:"Collapsibles", slug:"advance-ui-collapsibles"},
+        {url:"advance-ui-toasts.html", name:"Toasts", slug:"advance-ui-toasts"},
+        {url:"advance-ui-tooltip.html", name:"Tooltip", slug:"advance-ui-tooltip"},
+        {url:"advance-ui-dropdown.html", name:"Dropdown", slug:"advance-ui-dropdown"},
+        {url:"advance-ui-feature-discovery.html", name:"Discovery", slug:"advance-ui-feature-discovery"},
+        {url:"advance-ui-media.html", name:"Media", slug:"advance-ui-media"},
+        {url:"advance-ui-modals.html", name:"Modals", slug:"advance-ui-modals"},
+        {url:"advance-ui-scrollspy.html", name:"Scrollspy", slug:"advance-ui-scrollspy"},
+        {url:"advance-ui-tabs.html", name:"Tabs", slug:"advance-ui-tabs"},
+        {url:"advance-ui-waves.html", name:"Waves", slug:"advance-ui-waves"},
+      ]
+    },
+    {url:"#",name:"Extra Components", class:"collapsible-header waves-effect waves-cyan",slug:"extra-components",icon:"add_to_queue",
+      submenu:[
+        {url:"extra-components-range-slider.html", name:"Range Slider", slug:"extra-components-range-slider"},
+        {url:"extra-components-sweetalert.html", name:"Sweetalert", slug:"extra-components-sweetalert"},
+        {url:"extra-components-nestable.html", name:"Nestable", slug:"extra-components-nestable"},
+        {url:"extra-components-translation.html", name:"Translation", slug:"extra-components-translation"},
+        {url:"extra-components-highlight.html", name:"Highlight", slug:"extra-components-highlight"},
+      ]
+    },
+    
+    {navheader:"Tables & Forms ",icon:"remove"},
+
+    {url:"table-basic.html",name:"Basic Tables", class:"waves-effect waves-cyan",icon:"border_all",slug:"table-basic"},
+    {url:"table-data-table.html",name:"Data Tables", class:"waves-effect waves-cyan",icon:"border_all",slug:"table-data-table"},
+    {url:"#",name:"Form Elements", class:"collapsible-header waves-effect waves-cyan",slug:"form",icon:"chrome_reader_mode",
+      submenu:[
+        {url:"form-elements.html", name:"Form Elements", slug:"form-elements"},
+        {url:"form-validation.html", name:"Form Validation", slug:"form-validation"},
+        {url:"form-masks.html", name:"Form Masks", slug:"form-masks"},        
+        {url:"form-file-uploads.html", name:"File Uploads", slug:"form-file-uploads"},
+      ]
+    },
+
+    {url:"form-layouts.html",name:"Form Layouts", class:"waves-effect waves-cyan",icon:"image_aspect_ratio",slug:"form-layouts"},   
+    {url:"form-wizard.html",name:"Form Wizard", class:"waves-effect waves-cyan",icon:"settings_ethernet",slug:"form-wizard"},
+
+    {navheader:"Charts & Maps ",icon:"remove"},
+
+    {url:"#",name:"Chart", class:"collapsible-header waves-effect waves-cyan",slug:"chart",icon:"pie_chart_outlined",
+      submenu:[
+        {url:"charts-chartjs.html", name:"ChartJS", slug:"charts-chartjs"},
+        {url:"charts-chartist.html", name:"Chartist", slug:"charts-chartist"},
+        {url:"charts-sparklines.html", name:"Sparkline Charts", slug:"charts-sparklines"},
+      ]
+    },
+    
+    {navheader:"Misc ",icon:"remove"},
+    
+    {url:"#",name:"Menu levels", class:"collapsible-header waves-effect waves-cyan",icon:"photo_filter",slug:"",          
+        submenu:[
+          {url:"#",name:"Second level",slug:""},
+          {url:"#", class:"collapsible-header waves-effect waves-cyan" ,name:"Second level child",slug:"",
+            submenu:[
+              {url:"#",name:"Third level",slug:""}                
+            ]
+          },
+        ]
+      },
+    {url:"changelog.html" ,name:"Changelog", class:"waves-effect waves-cyan" ,icon:"track_changes",slug:"changelog"},
+    {url:"../https://pixinvent.com/materialize-material-design-admin-template/documentation/index.html" ,name:"Documentation", class:"waves-effect waves-cyan" ,icon:"import_contacts",slug:"documentation"},
+    {url:"https://pixinvent.ticksy.com/" ,name:"Support", class:"waves-effect waves-cyan" ,icon:"help_outline",slug:"support"},
+  ])
+  div(class="navigation-background")
+  a.sidenav-trigger.btn-floating.btn-medium.waves-effect.waves-light.hide-on-large-only(href='#', data-target='slide-out')
+    i.material-icons menu
+
+
+
+  //- /main menu content
+
+  //- main menu footer
+  //- include includes/menu-footer
+  //- main menu footer
+//- / main menu
+
+// END: SideNav
