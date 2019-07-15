@@ -5330,7 +5330,7 @@ li.home:before
 
 .cyan
 {
-    background-color: #d455ad !important;
+    background-color: #f5109c !important;
 }
 
 .cyan-text
@@ -7011,7 +7011,7 @@ li.home:before
       background: -webkit-linear-gradient(45deg, #ff5252, #f48fb1) !important;
       background: -moz- oldlinear-gradient(45deg, #ff5252, #f48fb1) !important;
       background:      -o-linear-gradient(45deg, #ff5252, #f48fb1) !important;
-      background:         linear-gradient(45deg, #ff5252, #f48fb1) !important;
+      background:         #f5109c !important;
 }
 .gradient-45deg-red-pink.gradient-shadow
 {
@@ -8344,7 +8344,7 @@ nav.display-none.search-sm .nav-wrapper form .input-field input.search-box-sm:no
       background: -webkit-linear-gradient(45deg, #8e24aa, #ff6e40);
       background: -moz- oldlinear-gradient(45deg, #8e24aa, #ff6e40);
       background:      -o-linear-gradient(45deg, #8e24aa, #ff6e40);
-      background:         linear-gradient(45deg, #8e24aa, #ff6e40);
+      background:         linear-gradient(45deg, #7a56af, #f5109c);
     -webkit-box-shadow: 3px 3px 20px 0 rgba(255, 110, 64, .5);
             box-shadow: 3px 3px 20px 0 rgba(255, 110, 64, .5);
 }

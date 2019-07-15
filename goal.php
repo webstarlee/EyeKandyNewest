@@ -7,16 +7,19 @@
     <div class="container-fluid relative animatedParent animateOnce" style="padding-top:100px !important;">
         <div class="animated fadeInUpShort p-md-5 p-3">            
             <section class="section">
-                <div id="button-trigger" class="card card card-default scrollspy" style="background:transparent;">
+                <div class="row">
+                <div class="col s12 m12 l12">
+                <div id="button-trigger" class="card card card-default scrollspy">
                     <div class="card-content">   
-                        <h1 class="mb-2" style="color:white; margin-left:10px;">Goals</h1>                   
+                        <h1 style="float: left;" class="mb-2" style="color:black; margin-left:10px;">Goals</h1>  
+                        <div style="margin-top: 34px;float: right;margin-right: 26px;" class="row addgoal">
+                                    <a id="addgoal" href="#goal-edit-modal" rel="modal:open" class="btn-floating mb-1 btn-large waves-effect waves-light">
+                                        <i style="background-color: #f5109c;" class="material-icons">add</i>
+                                    </a>
+                                </div>                 
                         <div class="row">
                             <div class="col s12 goaldetailtable">
-                                <div class="row addgoal">
-                                    <a id="addgoal" href="#goal-edit-modal" rel="modal:open" class="btn-floating mb-1 btn-large waves-effect waves-light">
-                                        <i class="material-icons">add</i>
-                                    </a>
-                                </div>
+                                
                             
                                 <table id="goaldetail-table" class="display" style="width:100%">
                                     <thead>
@@ -99,6 +102,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
             </section>  
         </div>
     </div>

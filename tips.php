@@ -5,9 +5,11 @@
 
 <!--Page Content-->
 <main id="pageContent" class="page has-sidebar">
-    <div class="container-fluid relative animatedParent animateOnce" style="padding-top:0px !important;">
-        <div class="animated fadeInUpShort">
+    <div class="container-fluid relative animatedParent animateOnce" style="padding-top:10px !important;">
+        <div class="animated fadeInUpShort p-md-5 p-3">
             <section class="section goals-tips">
+                <div class="row">
+                <div class="col s12 m12 l12">
                 <div class="card card-default scrollspy">
                     <div class="card-content">     
                         <div class="tips full">
@@ -78,6 +80,8 @@
                         </div>                        
                     </div>
                 </div>
+            </div>
+        </div>
             </section>
         </div>
     </div>

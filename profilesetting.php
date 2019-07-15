@@ -24,13 +24,13 @@
                                 <div class="card card-content animate fadeUp">
                                     <!-- <div class="card-badge"><a class="white-text"> <b>Profile Setting</b> </a></div> -->
                                     <div class="row profile-contain">
-                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <div style="float: left; padding-left: 20px;" class="col-lg-4 col-md-4 col-sm-4">
 
                                             <img src="https://eyekandimodels.co.uk/images/passImg.png"
                                                  class="responsive-img" alt="">
 
                                         </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-8">
+                                        <div style="float: left; margin-left: 200px;" class="col-lg-8 col-md-8 col-sm-8">
                                             <h3><span class="fontpink">Full Name</h3>
                                             <hr>
                                             <h5>Email&nbsp;:<?php echo $vc->email; ?></h5>

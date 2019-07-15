@@ -110,7 +110,7 @@ img {vertical-align: middle;}
     <script type="text/javascript" src="sliderengine/jquery.js"></script><script type="text/javascript" src="sliderengine/jquery.hislider.js"></script>
     <script src="assets/js/jquery.canvasjs.min.js"></script>      
     <script src="assets/js/dataTables.min.js"></script>  
-    <script src="assets/js/jquery.modal.min.js"></script>     
+         
     <!-- <script src="app-assets/js/scripts/eCommerce-products-page.js" type="text/javascript"></script>  
     <script src="app-assets/vendors/noUiSlider/nouislider.min.js" type="text/javascript"></script> -->
     <script src="assets/js/customize.js"></script>
@@ -121,7 +121,7 @@ img {vertical-align: middle;}
     <!-- BEGIN: Header-->
     <header class="page-topbar" id="header">
       <div class="navbar navbar-fixed"> 
-        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-purple-deep-orange gradient-shadow">
+        <nav style="background: linear-gradient(45deg, #0e0e0e, #272727) !important;" class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-purple-deep-orange gradient-shadow">
           <div class="nav-wrapper">
             
             <ul class="navbar-list right">

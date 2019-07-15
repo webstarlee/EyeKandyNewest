@@ -6653,7 +6653,7 @@ small
     letter-spacing: .5px;
 
     color: #fff;
-    background-color: #00bcd4;
+    background-color: #f5109c;
 }
 .btn:hover,
 .btn-large:hover,
@@ -7280,7 +7280,7 @@ body.keyboard-focused .dropdown-content li:focus
     left: 0;
 
     display: none;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
 
     width: 55%;
     max-height: 70%;

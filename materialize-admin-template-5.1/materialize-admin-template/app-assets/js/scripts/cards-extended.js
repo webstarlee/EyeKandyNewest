@@ -4,6 +4,7 @@
 // --------------------------
 
 // Options
+
 var SLOption = {
     responsive: true,
     maintainAspectRatio: true,
@@ -44,6 +45,8 @@ gradientStroke.addColorStop(1, '#26c6da');
 var gradientFill = LineSL1ctx.createLinearGradient(300, 0, 0, 300);
 gradientFill.addColorStop(0, '#0288d1');
 gradientFill.addColorStop(1, '#26c6da');
+
+
 
 var SL1Chart = new Chart(LineSL1ctx, {
     type: 'line',
@@ -102,7 +105,7 @@ var SL2Chart = new Chart(LineSL2ctx, {
             fill: true,
             backgroundColor: gradientFill,
             borderWidth: 1,
-            data: [24, 18, 20, 30, 40, 43, ]
+            data: [24, 18, 20, 100, 40, 43, ]
         }]
     },
     options: SLOption
@@ -144,3 +147,4 @@ var SL3Chart = new Chart(LineSL3ctx, {
     },
     options: SLOption
 });
+

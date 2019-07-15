@@ -10,7 +10,7 @@
       <!-- User Statistics -->
       <div class="card user-statistics-card animate fadeLeft">
          <div class="card-content">
-            <h4 class="card-title mb-0">Welcome:charley jean parsley <i class="material-icons float-right">more_vert</i></h4>
+            <h4 class="card-title mb-0" style="color: #f5109c; font-size: 25px;">Welcome:charley jean parsley <i class="material-icons float-right">more_vert</i></h4>
             <div class="row">
                <div class="col s12 m6">
                   <ul class="collection border-none mb-0">
@@ -23,27 +23,29 @@
                </div>
                <div class="col s12 m6">
                   <ul class="collection border-none mb-0">
-                     <li class="collection-item avatar" style="padding-left: 63px; padding-top: 14px;">
+                     <li class="collection-item avatar" style="padding-left: 63px; padding-top: 16px;">
                         <!-- <i class="material-icons circle purple accent-4">trending_down</i>
                         <p class="medium-small">Last year</p> -->
-                        <div class="medium-small">
-                           <!-- <button style="margin-top: 38px;" class="btn cyan waves-effect waves-light right" type="submit" name="action">BroadCast<i class="material-icons right">send</i></button> -->
-                           <?php
+                        <br><p class="medium-small">Suspendisse potenti non ipsum.<br><br><br><br><br></p>
+                        
 
-                              ?>
-                              <a href="https://www.streamatemodels.com/login.php"
-                                  <?php if ($acceptace == 0) { ?>
-                                 class="btn cyan waves-effect waves-light right" style="margin-top: 38px; width: 273px;">Create Broadcast<i class="material-icons right">send</i></a>
-                          <?php } else { ?>
-                              class="btn cyan waves-effect waves-light right">Broadcast<i class="material-icons right">send</i></a>
-                          <?php } ?>
-                        </div>
-
-                        <p class="medium-small"><br><br><br><br><br><br><br><br>Suspendisse potenti non ipsum.<br></p>
+                        
 
                      </li>
                   </ul>
                </div>
+               <div class="medium-small">
+                           <!-- <button style="margin-top: 38px;" class="btn cyan waves-effect waves-light right" type="submit" name="action">BroadCast<i class="material-icons right">send</i></button> -->
+                 <?php
+
+                    ?>
+                    <a href="https://www.streamatemodels.com/login.php"
+                        <?php if ($acceptace == 0) { ?>
+                       class="btn cyan waves-effect waves-light right" style="margin-top: 15px; width: 400px;">Complete Application/Broadcast<i class="material-icons right">send</i></a>
+                <?php } else { ?>
+                    class="btn cyan waves-effect waves-light right">Broadcast<i class="material-icons right">send</i></a>
+                <?php } ?>
+              </div>
             </div>
             
          </div>
@@ -53,7 +55,7 @@
       <!-- Recent Buyers -->
       <div class="card recent-buyers-card animate fadeUp">
          <div class="card-content">
-            <h4 class="card-title mb-0">Latest Goal <i class="material-icons float-right">more_vert</i></h4>
+            <h4 class="card-title mb-0" style="color: #f5109c; font-size: 25px;">Latest Goal <i class="material-icons float-right">more_vert</i></h4>
             <p class="medium-small pt-2">This billing cycle</p>
             
             <div class="current-balance-container">
@@ -67,7 +69,7 @@
    <div class="col s12 l3">
       <div class="card animate fadeRight">
          <div class="col s5 m5">
-            <h5 class="mb-0" style="margin-top: 23px;">Charley</h5>
+            <h5 class="mb-0" style="margin-top: 23px;color: #f5109c; font-size: 25px;">Charley</h5>
             <p class="no-margin">New</p>
             <p class="mb-0 pt-8" style="margin-top: 42px;">1,12,900</p>
          </div>
@@ -79,7 +81,7 @@
       <div class="card animate fadeRight">
          <div class="card-content">
             
-            <div class="medium-small" style="margin-right: 10px;"><button style="margin-top: 10px;" class="btn cyan waves-effect waves-light right" type="submit" name="action">ADD YOUR PAYMENT DETAILS<i class="material-icons right">send</i></button></div>
+            <div class="medium-small" style="margin-right: 10px;"><button id="goPayment" style="margin-top: 10px;" class="btn cyan waves-effect waves-light right" type="submit" name="action">ADD YOUR PAYMENT DETAILS<i class="material-icons right">send</i></button></div>
             <p style="padding-top: 79px;" class="medium-small center-align">https://localhost/EyeKandyNew</p>
             
          </div>
@@ -96,8 +98,8 @@
          <div class="card-content notice earning">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1 style="font-size: 23px; float: left;">Earning: <span
-                                    style="color:#f5109c !important">&nbsp;&pound;3827</span>
+                        <h1 style="font-size: 23px; float: left;color: #f5109c; font-size: 25px;">Earning: <span
+                                    style="color: #f5109c;">&nbsp;&pound;3827</span>
                         </h1>
                         <a href="earnings.php"><i class="material-icons float-right">more_vert</i></a>
                     </div>
@@ -122,7 +124,7 @@
       <!-- Current Balance -->
       <div class="card animate fadeLeft">
          <div class="card-content">
-            <h4 class="card-title mb-0"><i class="material-icons" style="transform: rotate(180deg); color: #f5109c; font-size: 60px;">format_quote</i> <i class="material-icons float-right">more_vert</i></h4>
+            <h4 class="card-title mb-0"><i class="material-icons" style="transform: rotate(180deg); color: #f5109c;; font-size: 60px;">format_quote</i> <i class="material-icons float-right">more_vert</i></h4>
             <p class="medium-small" style="margin-left: 57px;">On the auspicios occasion of Diwali, the Society has organized a gathering followed by dinner. <br>All members of the society are requested to attend the event in the clubhouse of the society at 8:00 pm on the 30th  of October.</p>
             <hr style="border-bottom: rgba(255,255,255,0.4) solid 1px; width: 40%; margin-bottom: 10px; margin-top: 72px;">
             
@@ -146,7 +148,7 @@
             <p style="font-size: 18px; ">Twitter is one of the most important places for a webcam model to promote themselves to gain more loyal fans! You can be as creative as you like with your tweets to help you get noticed and gain more followers. We advise all models to always tweet with a picture and their unique cam room link within your tweets.<br>Please login with your twitter account below to use our new twitter feature, where you can tweet to all your followers from  within this dashboard.</p>
          </div>
       
-         <a id="twitter-button" class="btn btn-block btn-social btn-twitter" style="margin-top:50px; margin-bottom:33px; width: 57%;float: right; margin-right: 18px; background-color: #d455ad;">
+         <a id="twitter-button" class="btn btn-block btn-social btn-twitter" style="margin-top:50px; margin-bottom:33px; width: 57%;float: right; margin-right: 18px; background-color: #f5109c;">
             <i class="fa fa-twitter"></i> Sign in with Twitter
           </a>
       </div>
@@ -156,10 +158,10 @@
    <div class="col s12 m6 l8" style="width: 66.65%;">
       <div class="card subscriber-list-card animate fadeRight">
          <div class="card-content pb-1">
-            <h4 class="card-title mb-0" style="color: #e91e63; font-weight: bold;">Notice <i class="material-icons float-right">more_vert</i></h4>
+            <h4 class="card-title mb-0" style="color: #e91e63; font-weight: bold;color: #f5109c;">Notice <i class="material-icons float-right">more_vert</i></h4>
          </div>
          <table class="subscription-table responsive-table highlight">
-            <thead style="background: linear-gradient(45deg, #8e24aa, #ff6e40) !important; color: white;">
+            <thead style="background: linear-gradient(45deg, #7a56af, #f5109c) !important; color: white;">
                <tr>
                   <th>Title</th>
                   <th>Content</th>
@@ -228,6 +230,10 @@
          var slideIndex = 0;
          showSlides();
 
+         $("#goPayment").click(function(){
+          location.href = "payment.php";
+         });
+
          function showSlides() {
            var i;
            var slides = document.getElementsByClassName("mySlides");
@@ -252,10 +258,10 @@
   <div class="col s12 m6 l8" style="width: 77.5%; float: left;">
       <div class="card subscriber-list-card animate fadeRight">
          <div class="card-content pb-1">
-            <h4 class="card-title mb-0" style="color: #e91e63; font-weight: bold;">Support <i class="material-icons float-right">more_vert</i></h4>
+            <h4 class="card-title mb-0" style="color: #f5109c;; font-weight: bold;">Support <i class="material-icons float-right">more_vert</i></h4>
          </div>
          <table class="subscription-table responsive-table highlight">
-            <thead style="background: linear-gradient(45deg, #8e24aa, #ff6e40) !important; color: white;">
+            <thead style="background: linear-gradient(45deg, #7a56af, #f5109c) !important; color: white;">
                <tr>
                   <th>Ticket</th>
                   <th>Date</th>
@@ -300,7 +306,7 @@
                   <td class="center-align"><a href="#"><i class="material-icons pink-text">clear</i></a></td> -->
                </tr>
             </tbody>
-            <tfoot style="background: linear-gradient(45deg, #8e24aa, #ff6e40) !important; color: white;">
+            <tfoot style="background: linear-gradient(45deg, #7a56af, #f5109c) !important; color: white;">
                 <tr>
                   <th>Ticket</th>
                   <th>Date</th>

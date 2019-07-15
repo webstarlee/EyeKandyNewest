@@ -7,6 +7,9 @@
     <div class="container-fluid relative animatedParent animateOnce" style="padding-top:100px !important;">
         <div class="animated fadeInUpShort p-md-5 p-3">
             <section class="section">
+                <div class="row">
+                <div class="col s12 m12 l12">
+                <div id="basic-tabs" class="card card card-default scrollspy">
                 <div class="card-content quote sidebar-support">
                     <p>Support</p>
                     <table id="sidebar-support-table" class="display" style="width:100%">
@@ -71,6 +74,9 @@
                         </tfoot> -->
                     </table>
                 </div>
+            </div>
+            </div>
+            </div>
             </section>
             <script>
                 $('#sidebar-support-table').dataTable({
